@@ -8,11 +8,6 @@ app.use(express.json());
 app.use("/", home);
 app.use("/api/avengers", avengers);
 
-let avengerArray = [
-    { id: 1, name: "Iron Man" },
-    { id: 2, name: "Thor" },
-];
-
 app.listen(port, () => {
     console.log("started");
 });
